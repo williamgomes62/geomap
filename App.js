@@ -18,13 +18,12 @@ import {
   View,
 } from 'react-native';
 
-import Header from './src/Header/index';
-import Home from './src/Home/index';
+import Login from './src/Login/index';
 
 const App: () => Node = () => {
   return (
     <>
-      <Home />
+      <Login />
     </>
    
   )
