@@ -3,21 +3,28 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, Touchable, TouchableOpacity, KeyboardAvoidingView, TextInput } from 'react-native';
 import Header from '../Header';
 
-function Login() {
+function Register() {
   return (
     <>
       <Header />
       <KeyboardAvoidingView  style={styles.background}>
         <View style={styles.container}>
           <Text style={styles.textTop}>Informe seus dados:</Text>
+          <Text style={styles.textForm}>Nome:</Text>
+            <TextInput
+              style={styles.input}
+              placeholder="Jane Silva"
+              autoCorrect={false}
+              onChangeText={()=> {}}
+            />
           <Text style={styles.textForm}>Email:</Text>
             <TextInput
             style={styles.input}
             placeholder="jane@example.com"
             autoCorrect={false}
             onChangeText={()=> {}}
-          />
-            <Text style={styles.textForm}>Senha:</Text>
+            />
+          <Text style={styles.textForm}>Senha:</Text>
               <TextInput
               style={styles.input}
               placeholder="********"
@@ -25,7 +32,7 @@ function Login() {
               onChangeText={()=> {}}
             />
             <TouchableOpacity style={styles.button}>
-              <Text style={styles.buttonText}>ENTRAR</Text>
+              <Text style={styles.buttonText}>CADASTRAR</Text>
             </TouchableOpacity>
         </View>
       </KeyboardAvoidingView> 
@@ -74,7 +81,7 @@ const styles = StyleSheet.create({
   },
   textTop: {
     fontSize: 30,
-    paddingBottom: 50
+    paddingBottom: 0
   },
   textForm: {
     fontSize: 24,
@@ -83,4 +90,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default Login;
+export default Register;

@@ -18,6 +18,7 @@ import {
   View,
 } from 'react-native';
 
+import Register from './src/Register/index';
 import Login from './src/Login/index';
 
 const App: () => Node = () => {
@@ -28,16 +29,5 @@ const App: () => Node = () => {
    
   )
 };
-
-const styles = StyleSheet.create({
-
-  text: {
-    color:'#FFF',
-    alignContent: 'center',
-    textAlign: 'center',
-    alignItems: 'center',
-    paddingTop: 350,
-  },
-});
 
 export default App;
