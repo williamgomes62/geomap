@@ -19,12 +19,14 @@ import {
 } from 'react-native';
 
 import Register from './src/Register/index';
-import Login from './src/Login/index';
+import Projects from './src/Projects/index';
+import ProjectCard from './src/ProjectCard/index';
+import NewProject from './src/NewProject/index';
 
 const App: () => Node = () => {
   return (
     <>
-      <Login />
+      <NewProject />
     </>
    
   )
